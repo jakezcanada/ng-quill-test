@@ -11,6 +11,7 @@ import { Server, Socket } from 'socket.io';
   cors: {
     origin: '*',
   },
+  namespace: 'events'
 })export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
 
   @WebSocketServer()
